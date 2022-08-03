@@ -1,0 +1,17 @@
+﻿<Window x:Class="_09ClickingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_09ClickingGame"
+        mc:Ignorable="d"
+        Title="Clicking Game" Height="450" Width="800">
+    <Grid Height="420" Width="780">
+        <Canvas Name="cnv" Height="350" Width="700"></Canvas>
+        <Menu VerticalAlignment="Top" HorizontalAlignment="Left" Width="780" Height="25">
+            <MenuItem Name="NewGame" Header="NewGame" Click="NewGame_Click"></MenuItem>
+        </Menu>
+        <TextBlock Name="txbScore" Text="Score = 0" VerticalAlignment="Top" HorizontalAlignment="Right"></TextBlock>
+        <TextBlock Name="txbTime" Text="Remaining Time: 0" VerticalAlignment="Top" HorizontalAlignment="Center"></TextBlock>
+    </Grid>
+</Window>
